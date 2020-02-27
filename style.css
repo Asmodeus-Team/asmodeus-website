@@ -72,6 +72,11 @@ a:hover {
     width: 100%;
 }
 
+.footer-p {
+    margin-top: 10px;
+    margin-bottom: 4px
+}
+
 .dark-huch {
     color: rgba(255, 255, 255, .7);
 }
@@ -275,6 +280,10 @@ a {
 
 .h4-modal {
     font-size: 26px;
+}
+
+.h6-style {
+    font-size: 10px;
 }
 
 .blacklegocity {
