@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Welcome to the test of Asmodeus Website 2.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css?4677">
+    <link rel="stylesheet" type="text/css" href="style.css?4357">
+    <link rel="stylesheet" type="text/css" href="./css/animate.css?4948">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <title>Asmodeus</title>
+</head>
+
+<body>
+    <div class="page-container">
+
+        <!-- header -->
+        <div class="main header-st bgc-pastel-red dark-huch" id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar row navbar-light navbar-expand-md" role="navigation">
+                            <a class="asmologo lttstorebut-black link-style" href="./"><img src="img/asmodey_logo.png" alt="logo" class="mr-2" />
+                                <strong>Asmodeus</strong>
+                            </a>
+                            <button id="nav-toggle" type="button" class="ml-auto ui-navbar-toggler navbar-toggler border-0 p-0 menu-icon-circles" data-toggle="collapse" data-target=".headernav-main" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+                            <div class="collapse navbar-collapse headernav-main">
+                                <ul class="site-navigation nav navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link buttonnav lttstorebut-black" data-toggle="modal" data-target="#login">Log In</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link buttonnav lttstorebut-black" data-toggle="modal" data-target="#register">Register</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header -->
+
+        <!-- loginandregistershithere -->
+        <div class="main light-huch" id="loginandregistershithere">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div id="register" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="nomarginatallwhyidk store-black h4-modal">
+                                            Register in Asmodeus
+                                        </h4><a href="#" class="btn btn-d btn-lg btn-isbtswhat-no" data-dismiss="modal" aria-label="Close"><span class="fa fa-close close"></span></a>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="registerform" data-form-type="form" novalidate data-success-msg="You have successfully registered." data-fail-msg="Sorry, we couldn't register you." action="somekindofregisterapiplease" method="POST">
+                                            <div class="form-group">
+                                                <input id="emailreg" class="form-control blacklegocity" required placeholder="Email" type="email" data-error-validation-msg="You should enter a valid email address." data-validation-required-message="You have to enter an email address." name="emailreg"
+                                                />
+                                            </div>
+                                            <div class="form-group">
+                                                <input id="passwordreg" class="form-control blacklegocity" type="password" required data-validation-required-message="You have to enter the password." placeholder="Password" name="passwordreg" />
+                                            </div>
+                                            <div class="form-check blacklegocity">
+                                                <input class="form-check-input" type="checkbox" id="agreetotos" data-validation-minchecked-message="You must agree to some kind of Asmodeus license and MTech license or Maksandra will fuck you." data-validation-minchecked-minchecked="1" name="agreetotos"
+                                                />
+                                                <label class="form-check-label">
+											I agree to the terms of service
+										</label>
+                                            </div>
+                                            <button class="btn btn-block button-cleanandno blacklegocity btn-lg" type="submit">
+										Register
+									</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="login" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="nomarginatallwhyidk store-black h4-modal">
+                                            Login to Asmodeus
+                                        </h4><a href="#" class="btn btn-d btn-lg btn-isbtswhat-no" data-dismiss="modal" aria-label="Close"><span class="fa fa-close close"></span></a>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="form-40276" data-form-type="form" novalidate data-success-msg="You have successfully logged in." data-fail-msg="Sorry, we couldn't register you." action="somekindofloginapiplease" method="POST">
+                                            <div class="form-group">
+                                                <input id="emaillogin" class="form-control blacklegocity" required placeholder="Email" type="email" data-error-validation-msg="You should enter a valid email address." data-validation-required-message="You have to enter an email address." name="emailreg"
+                                                />
+                                            </div>
+                                            <div class="form-group">
+                                                <input id="passwordlogin" class="form-control blacklegocity" type="password" required data-validation-required-message="You have to enter the password." placeholder="Password" name="passwordreg" />
+                                            </div>
+                                            <button class="btn btn-lg btn-block button-cleanandno blacklegocity" type="submit">
+										Log in
+									</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- loginandregistershithere -->
+
+        <div class="dividenytwooftwowhat" id="first-intro">
+            <!-- firstpartof-first -->
+            <div class="main partofdividing2 store-black light-huch fillingscreen" id="firstpartof-first">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="text-lg-center main-sm store-black animated puffIn" data-appear-anim-style="puffIn">
+                                Hello!
+                            </h1>
+                            <p class="animDelay04 animated fadeIn" data-appear-anim-style="fadeIn">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed faucibus turpis in eu mi. Blandit massa enim nec dui. Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris.
+                                Rhoncus dolor purus non enim praesent. Sosat non odio euismod lacinia at quis. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Tristique
+                                et egestas quis ipsum. Vulputate enim nulla aliquet porttitor lacus luctus accumsan. At augue eget arcu dictum varius. Aenean euismod elementum nisi quis eleifend quam adipiscing. Placerat duis ultricies lacus sed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- firstpartof-first -->
+
+            <!-- secondpartof-first -->
+            <div class="main partofdividing2 animDelay06 bg-asmodey-prototype-bg-intro dark-huch fillingscreen" id="secondpartof-first">
+            </div>
+            <!-- secondpartof-first -->
+        </div>
+
+        <div class="dividenytwooftwowhat" id="second-news">
+            <!-- firstpartof-second -->
+            <div class="main partofdividing2 fillingscreen store-black" id="firstpartof-second">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 bgc-pastel-red">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="store-black text-lg-center h2-style main-md">
+                                        <strong>Latest Update:</strong>
+                                    </h2>
+                                    <img src="img/Screenshot%202020-02-07%20at%2022.09.28.png" class="img-fluid mx-auto d-block" alt="Screenshot%202020 02-07%20at%2022.09.28" />
+                                    <h3 class="main-md h3-style text-lg-center">
+                                        Finally, we sucked cock
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- firstpartof-second -->
+
+            <!-- secondpartof-second -->
+            <div class="main partofdividing2 fillingscreen store-black" id="secondpartof-second">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-12 align-self-start">
+                            <h1 class="main-md store-black mx-auto d-block">
+                                <strong>You wonder what I can do?</strong>
+                            </h1>
+                            <ul>
+                                <li>
+                                    <p class="animated fadeIn animSpeed04" data-appear-anim-style="fadeIn">
+                                        We&rsquo;re bringing to the studio one of the gay right activists.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="animSpeed04 animDelay02 animated fadeIn" data-appear-anim-style="fadeIn">
+                                        Hi, Phil Swift here with Flex Tape!
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="animated fadeIn animSpeed04 animDelay04" data-appear-anim-style="fadeIn">
+                                        The super-strong waterproof tape! That can instantly patch, bond, seal, and repair!
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="animDelay06 animSpeed04 animated fadeIn" data-appear-anim-style="fadeIn">
+                                        Flex tape is no ordinary tape; its triple thick adhesive virtually welds itself to the surface, instantly stopping the toughest leaks. Leaky pipes can cause major damage, but Flex Tape grips on tight and bonds instantly!
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="animDelay08 animSpeed04 animated fadeIn" data-appear-anim-style="fadeIn">
+                                        Plus, Flex Tape&rsquo;s powerful adhesive is so strong, it even works underwater!
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="animSpeed04 animDelay1 animated fadeIn" data-appear-anim-style="fadeIn">
+                                        Now you can repair leaks in pools and spas in water without draining them! Flex Tape is super strong, and once it's on, it holds on tight!
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- secondpartof-second -->
+        </div>
+
+    </div>
+
+    <script src="./js/jquery-3.3.1.js?6921"></script>
+    <script src="./js/bootstrap.bundle.js?6526"></script>
+    <script src="./js/main.js?2213"></script>
+    <script src="./js/jqBootstrapValidation.js"></script>
+    <script src="./js/forms.js?1713"></script>
+    <!-- JS help me idk what im doing -->
+
+</body>
+
+</html>
