@@ -230,6 +230,10 @@ button {
     box-shadow: none;
 }
 
+.btn-maksandra {
+    width: 30%;
+}
+
 h1,
 h2,
 h3,
@@ -258,7 +262,7 @@ a {
 }
 
 .p-style {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .h2-style {
