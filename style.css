@@ -40,6 +40,21 @@ a:hover {
     padding-right: 0;
 }
 
+.full-bridge-rectifier {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.full-bridge-rectifier .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.full-bridge-rectifier .container {
+    width: 100%;
+    max-width: 100%!important;
+}
+
 .fillingscreen {
     min-height: 100vh;
     display: flex;
@@ -145,6 +160,10 @@ a:hover {
     border-color: rgba(0, 0, 0, .3);
 }
 
+.margmobile {
+    margin-right: auto !important;
+}
+
 .header-st.sticky {
     position: fixed;
     top: 0;
@@ -206,6 +225,11 @@ button {
     outline: none!important;
 }
 
+.mobile-button {
+    color: #000000!important;
+    border-color: #cccccc!important;
+}
+
 .btn-isbtswhat-no,
 .btn-isbtswhat-no:hover,
 .btn-isbtswhat-no:active,
@@ -230,7 +254,7 @@ button {
     box-shadow: none;
 }
 
-.btn-maksandra {
+.btn-preview {
     width: 30%;
 }
 
