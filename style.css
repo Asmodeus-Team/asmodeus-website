@@ -27,6 +27,14 @@ a:hover {
     width: 129px;
 }
 
+.sidebarmenu {
+    width: 10%;
+}
+
+.mainpart_maps {
+    width: 90%;
+}
+
 .username-name {
     width: 100%;
     font-size: 16px;
@@ -52,6 +60,16 @@ a:hover {
 .main .container {
     padding-left: 0;
     padding-right: 0;
+}
+
+.full-maps-rectif {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.full-maps-rectif .row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .full-bridge-rectifier {
@@ -95,6 +113,14 @@ a:hover {
 
 .partofdividing2 {
     width: 50%;
+}
+
+.mapname {
+    font-size: 18px;
+}
+
+.sidebar-list-style {
+    font-size: 26px;
 }
 
 .partofdividing2 .container {
@@ -360,6 +386,14 @@ a {
 
 .bg-asmodey-prototype-bg-intro {
     background-image: url("img/asmodey_prototype-bg-intro.png");
+}
+
+.list-meidum li {
+    padding-bottom: 10px;
+}
+
+.list-meidum li:last-child {
+    padding-bottom: 0;
 }
 
 @media (max-width: 1024px) {
