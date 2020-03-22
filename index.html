@@ -32,23 +32,22 @@
                                 <strong>Asmodeus</strong>
                             </a>
                             <button id="nav-toggle" type="button" class="ml-auto ui-navbar-toggler navbar-toggler border-0 p-0 menu-icon-circles" data-toggle="collapse" data-target=".headernav-main" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
                             <div class="collapse navbar-collapse headernav-main">
                                 <ul class="site-navigation nav navbar-nav ml-auto">
-                                    <li class="nav-item">
+                                    <li class="nav-item if-not-logged-in">
                                         <a href="#" class="nav-link buttonnav lttstorebut-black" data-toggle="modal" data-target="#login">Log In</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item if-not-logged-in">
                                         <a href="#" class="nav-link buttonnav lttstorebut-black" data-toggle="modal" data-target="#register">Register</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <h5 class="username-name nomarginatallwhyidk lttstorebut-black">
-                                            username_intro
-                                        </h5><img src="img/Cg5WzPmbDMM.jpg" class="img-fluid mx-auto img-userphoto-postironical-toberemoved" alt="Cg5WzPmbDMM" />
+                                    <li class="nav-item if-logged-in" id="user-logged-in-info">
+                                        <h5 class="username-name nomarginatallwhyidk lttstorebut-black"></h5>
+                                        <img src="img/Cg5WzPmbDMM.jpg" class="img-fluid mx-auto img-userphoto-postironical-toberemoved" alt="Cg5WzPmbDMM" />
                                     </li>
                                     <li>
-                                        <a href="./" class="nav-link buttonnav lttstorebut-black link-register-style">Logout</a>
+                                        <a href="#" class="nav-link buttonnav lttstorebut-black link-register-style if-logged-in" id="logout-btn">Logout</a>
                                     </li>
                                 </ul>
                             </div>
@@ -73,24 +72,25 @@
                                         </h4><a href="#" class="btn btn-d btn-lg btn-isbtswhat-no" data-dismiss="modal" aria-label="Close"><span class="fa fa-close close"></span></a>
                                     </div>
                                     <div class="modal-body">
-                                        <form id="registerform" data-form-type="form" novalidate data-success-msg="You have successfully registered." data-fail-msg="Sorry, we couldn't register you." action="somekindofregisterapiplease" method="POST">
+                                        <form id="form-register" data-form-type="form" novalidate data-success-msg="You have successfully registered." data-fail-msg="Sorry, we couldn't register you.">
                                             <div class="form-group">
-                                                <input id="emailreg" class="form-control blacklegocity" required placeholder="Email" type="email" data-error-validation-msg="You should enter a valid email address." data-validation-required-message="You have to enter an email address." name="emailreg"
-                                                />
+                                                <input class="form-control blacklegocity" required placeholder="Username" type="text" data-validation-required-message="You have to enter an user name." name="username" />
                                             </div>
                                             <div class="form-group">
-                                                <input id="passwordreg" class="form-control blacklegocity" type="password" required data-validation-required-message="You have to enter the password." placeholder="Password" name="passwordreg" />
+                                                <input class="form-control blacklegocity" required placeholder="Email" type="email" data-error-validation-msg="You should enter a valid email address." data-validation-required-message="You have to enter an email address." name="email" />
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control blacklegocity" required placeholder="Password" type="password" data-validation-required-message="You have to enter the password." name="password" />
                                             </div>
                                             <div class="form-check blacklegocity">
-                                                <input class="form-check-input" type="checkbox" id="agreetotos" data-validation-minchecked-message="You must agree to the terms of service." data-validation-minchecked-minchecked="1" name="agreetotos"
-                                                />
+                                                <input class="form-check-input" type="checkbox" id="agreetotos" data-validation-minchecked-message="You must agree to the terms of service." data-validation-minchecked-minchecked="1" name="agreetotos"/>
                                                 <label class="form-check-label">
-											I agree to the terms of service
-										</label>
+                                                    I agree to the terms of service
+                                                </label>
                                             </div>
                                             <button class="btn btn-block button-cleanandno blacklegocity btn-lg" type="submit">
-										Register
-									</button>
+                                                Register
+                                            </button>
                                         </form>
                                     </div>
                                 </div>
@@ -105,17 +105,14 @@
                                         </h4><a href="#" class="btn btn-d btn-lg btn-isbtswhat-no" data-dismiss="modal" aria-label="Close"><span class="fa fa-close close"></span></a>
                                     </div>
                                     <div class="modal-body">
-                                        <form id="form-40276" data-form-type="form" novalidate data-success-msg="You have successfully logged in." data-fail-msg="Sorry, we couldn't register you." action="somekindofloginapiplease" method="POST">
+                                        <form id="form-login" data-form-type="form" novalidate data-success-msg="You have successfully logged in." data-fail-msg="Failed to log in.">
                                             <div class="form-group">
-                                                <input id="emaillogin" class="form-control blacklegocity" required placeholder="Email" type="email" data-error-validation-msg="You should enter a valid email address." data-validation-required-message="You have to enter an email address." name="emailreg"
-                                                />
+                                                <input name="username" class="form-control blacklegocity" placeholder="Username" required type="text" data-validation-required-message="You have to enter a username." />
                                             </div>
                                             <div class="form-group">
-                                                <input id="passwordlogin" class="form-control blacklegocity" type="password" required data-validation-required-message="You have to enter the password." placeholder="Password" name="passwordreg" />
+                                                <input name="password" class="form-control blacklegocity" placeholder="Password" required type="password" data-validation-required-message="You have to enter the password."/>
                                             </div>
-                                            <button class="btn btn-lg btn-block button-cleanandno blacklegocity" type="submit">
-										Log in
-									</button>
+                                            <button class="btn btn-lg btn-block button-cleanandno blacklegocity" type="submit">Log in</button>
                                         </form>
                                     </div>
                                 </div>
@@ -271,6 +268,7 @@
 
     <script src="./js/jquery-3.3.1.js?6921"></script>
     <script src="./js/bootstrap.bundle.js?6526"></script>
+    <script src="./js/api.js?22131"></script>
     <script src="./js/main.js?2213"></script>
     <script src="./js/jqBootstrapValidation.js"></script>
     <script src="./js/forms.js?1713"></script>

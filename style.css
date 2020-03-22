@@ -431,3 +431,7 @@ a {
         padding: 5px;
     }
 }
+
+.if-logged-in {
+    display: none;
+}

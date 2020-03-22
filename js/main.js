@@ -1,7 +1,11 @@
 $(function() {
+    api.onload();
     headerUpWhat();
     dropdownHeader();
     $('.nav-item [data-active-page]').addClass($('.nav-item [data-active-page]').attr('data-active-page'));
+    $("#logout-btn").click(function(e) {
+        api.logout();
+    });
 });
 
 $(window).on('load', function() {
