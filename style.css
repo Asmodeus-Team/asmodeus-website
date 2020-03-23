@@ -7,9 +7,15 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
+/* Disable horizontal scroll bar in browser  */
+
 .page-container {
     overflow-x: hidden;
 }
+
+
+/* Prevent blue glow in browsers */
 
 a,
 button {
@@ -22,10 +28,16 @@ a:hover {
     cursor: pointer;
 }
 
+
+/* User's photo dimensions */
+
 .img-userphoto-postironical-toberemoved {
     height: 20px;
     width: 129px;
 }
+
+
+/* My Maps: Width */
 
 .sidebarmenu {
     width: 10%;
@@ -35,14 +47,15 @@ a:hover {
     width: 90%;
 }
 
-.username-name {
-    width: 100%;
-    font-size: 16px;
-}
+
+/* Padding for SecondGroup in Main */
 
 .addsmolpad {
     padding: 50px;
 }
+
+
+/* The Main Thing */
 
 .main {
     width: 100%;
@@ -61,6 +74,9 @@ a:hover {
     padding-left: 0;
     padding-right: 0;
 }
+
+
+/* Full Width */
 
 .full-maps-rectif {
     padding-left: 0;
@@ -87,6 +103,9 @@ a:hover {
     max-width: 100%!important;
 }
 
+
+/* Fill whole screen */
+
 .fillingscreen {
     min-height: 100vh;
     display: flex;
@@ -107,13 +126,26 @@ a:hover {
     width: 100%;
 }
 
+
+/* Group */
+
 .dividenytwooftwowhat {
     display: flex;
 }
 
+
+/* Main Page group */
+
 .partofdividing2 {
     width: 50%;
 }
+
+.partofdividing2 .container {
+    width: 100%;
+}
+
+
+/* Text Sizes */
 
 .mapname {
     font-size: 18px;
@@ -123,18 +155,50 @@ a:hover {
     font-size: 26px;
 }
 
-.partofdividing2 .container {
+.username-name {
     width: 100%;
+    font-size: 16px;
 }
 
-.link-register-style {
-    width: 100%;
+.link-style {
+    font-weight: normal;
+    font-size: 28px;
 }
+
+.p-style {
+    font-size: 20px;
+}
+
+.h2-style {
+    font-size: 33px;
+}
+
+.h3-style {
+    font-size: 24px;
+}
+
+.h4-style {
+    font-size: 26px;
+}
+
+.h4-modal {
+    font-size: 26px;
+}
+
+.h6-style {
+    font-size: 10px;
+}
+
+
+/* Footer Margin */
 
 .footer-p {
     margin-top: 10px;
     margin-bottom: 4px
 }
+
+
+/* Dark Side */
 
 .dark-huch {
     color: rgba(255, 255, 255, .7);
@@ -174,6 +238,9 @@ a:hover {
     border-color: rgba(255, 255, 255, 1);
 }
 
+
+/* Light Side */
+
 .light-huch .partofdividing2,
 .light-huch .navbar a,
 .light-huch h1 a,
@@ -204,9 +271,15 @@ a:hover {
     border-color: rgba(0, 0, 0, .3);
 }
 
+
+/* Margin for mobile */
+
 .margmobile {
     margin-right: auto !important;
 }
+
+
+/* Sticky Things */
 
 .header-st.sticky {
     position: fixed;
@@ -216,6 +289,15 @@ a:hover {
     transition: all .2s ease-out;
 }
 
+.sidebarmaps.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* Navigation Bar Mobile Toggle */
+
 .navbar-light .menu-icon-circles .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgba(0, 0, 0, 0.5)' d='M15.5,12A3.5,3.5,0,1,1,12,15.5,3.5,3.5,0,0,1,15.5,12Zm11,0A3.5,3.5,0,1,1,23,15.5,3.5,3.5,0,0,1,26.5,12Zm-22,0A3.5,3.5,0,1,1,1,15.5,3.5,3.5,0,0,1,4.5,12Z'/%3E%3C/svg%3E");
 }
@@ -224,9 +306,15 @@ a:hover {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgba(255, 255, 255, 0.5)' d='M15.5,12A3.5,3.5,0,1,1,12,15.5,3.5,3.5,0,0,1,15.5,12Zm11,0A3.5,3.5,0,1,1,23,15.5,3.5,3.5,0,0,1,26.5,12Zm-22,0A3.5,3.5,0,1,1,1,15.5,3.5,3.5,0,0,1,4.5,12Z'/%3E%3C/svg%3E");
 }
 
+
+/* NavBar */
+
 .navbar-light .navbar-nav .nav-link {
     color: rgb(64, 64, 64);
 }
+
+
+/* BTCO Menu */
 
 .btco-menu li>a {
     padding: 10px 15px;
@@ -240,13 +328,22 @@ a:hover {
     outline: 0;
 }
 
+
+/* Dropdown mobile menu */
+
 .dropdown-menu .show>.dropdown-toggle::after {
     transform: rotate(-90deg);
 }
 
+
+/* Zero Margin */
+
 .nomarginatallwhyidk {
     margin: 0;
 }
+
+
+/* Main Margins */
 
 .main-sm {
     margin-top: 10px;
@@ -257,6 +354,9 @@ a:hover {
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
+
+/* Buttons */
 
 .btn-d,
 .btn-d:hover,
@@ -272,6 +372,10 @@ button {
 .mobile-button {
     color: #000000!important;
     border-color: #cccccc!important;
+}
+
+.link-register-style {
+    width: 100%;
 }
 
 .btn-isbtswhat-no,
@@ -293,14 +397,20 @@ button {
     border: 2px solid transparent;
 }
 
+.btn-preview {
+    width: 30%;
+}
+
+
+/* Forms */
+
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
 }
 
-.btn-preview {
-    width: 30%;
-}
+
+/* Text font */
 
 h1,
 h2,
@@ -315,62 +425,54 @@ a {
     font-family: "Montserrat";
 }
 
-.container {
-    max-width: 1140px;
-}
 
-.asmologo img {
-    width: 39px;
-    height: 48px;
-}
-
-.link-style {
-    font-weight: normal;
-    font-size: 28px;
-}
-
-.p-style {
-    font-size: 20px;
-}
-
-.h2-style {
-    font-size: 33px;
-}
-
-.h3-style {
-    font-size: 24px;
-}
-
-.img-style {
-    height: 79px;
-    width: 471px;
-}
-
-.h4-style {
-    font-size: 26px;
-}
-
-.h4-modal {
-    font-size: 26px;
-}
-
-.h6-style {
-    font-size: 10px;
-}
+/* Black text */
 
 .blacklegocity {
     font-family: "Montserrat";
     color: #000000!important;
 }
 
+
+/* Container maximum width */
+
+.container {
+    max-width: 1140px;
+}
+
+
+/* Asmodeus logo */
+
+.asmologo img {
+    width: 32px;
+    height: 48px;
+}
+
+
+/* Images Width */
+
+.img-style {
+    height: 79px;
+    width: 471px;
+}
+
+
+/* Zero Bottom Pad/M */
+
 .youliedtome {
     padding-bottom: 0px;
     margin-bottom: 0%;
 }
 
+
+/* Asmodeus main color */
+
 .bgc-pastel-red {
     background-color: #F0645E;
 }
+
+
+/* Black Colors */
 
 .store-black {
     color: #000000!important;
@@ -384,9 +486,15 @@ a {
     color: #000000!important;
 }
 
+
+/* Asmodeus mainpage background picture */
+
 .bg-asmodey-prototype-bg-intro {
     background-image: url("img/asmodey_prototype-bg-intro.png");
 }
+
+
+/* List Paddings */
 
 .list-meidum li {
     padding-bottom: 10px;
@@ -395,6 +503,9 @@ a {
 .list-meidum li:last-child {
     padding-bottom: 0;
 }
+
+
+/* Mobile adjustments */
 
 @media (max-width: 1024px) {
     .main {
@@ -431,6 +542,9 @@ a {
         padding: 5px;
     }
 }
+
+
+/* Hide if logged in */
 
 .if-logged-in {
     display: none;
