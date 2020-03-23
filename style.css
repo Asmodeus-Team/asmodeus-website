@@ -76,6 +76,26 @@ a:hover {
 }
 
 
+/* The Main Thing except it's for MyMaps */
+
+.main-mymaps {
+    clear: both;
+    background: 50% 50% no-repeat;
+    padding: 0 50px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+.main-mymaps .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
 /* Full Width */
 
 .full-maps-rectif {
