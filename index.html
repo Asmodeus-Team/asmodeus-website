@@ -42,8 +42,8 @@
                                     <li class="nav-item if-not-logged-in">
                                         <a href="#" class="nav-link buttonnav lttstorebut-black" data-toggle="modal" data-target="#register">Register</a>
                                     </li>
-                                    <li class="nav-item if-logged-in" id="user-logged-in-info">
-                                        <img src="./img/Cg5WzPmbDMM.jpg" class="img-fluid mx-auto img-userprofilepic profileinfo" alt="userprofilepicture" />
+                                    <li class="nav-item if-logged-in dividenytwooftwowhat proforient" id="user-logged-in-info">
+                                        <img src="./img/Cg5WzPmbDMM.jpg" class="img-fluid img-userprofilepic profileinfo" alt="userprofilepicture" />
                                         <h5 class="username-name nomarginatallwhyidk lttstorebut-black profileinfo usernamepadding">
                                             username_intro
                                         </h5>
@@ -71,7 +71,8 @@
                                     <div class="modal-header">
                                         <h4 class="nomarginatallwhyidk store-black h4-modal">
                                             Register in Asmodeus
-                                        </h4><a href="#" class="btn btn-d btn-lg btn-isbtswhat-no" data-dismiss="modal" aria-label="Close"><span class="fa fa-close close"></span></a>
+                                        </h4>
+                                        <a href="#" class="btn btn-d btn-lg btn-isbtswhat-no" data-dismiss="modal" aria-label="Close"><span class="fa fa-close close"></span></a>
                                     </div>
                                     <div class="modal-body">
                                         <form id="form-register" data-form-type="form" novalidate data-success-msg="You have successfully registered." data-fail-msg="Sorry, we couldn't register you.">
@@ -85,7 +86,7 @@
                                                 <input class="form-control blacklegocity" required placeholder="Password" type="password" data-validation-required-message="You have to enter the password." name="password" />
                                             </div>
                                             <div class="form-check blacklegocity">
-                                                <input class="form-check-input" type="checkbox" id="agreetotos" data-validation-minchecked-message="You must agree to the terms of service." data-validation-minchecked-minchecked="1" name="agreetotos"/>
+                                                <input class="form-check-input" type="checkbox" id="agreetotos" data-validation-minchecked-message="You must agree to the terms of service." data-validation-minchecked-minchecked="1" name="agreetotos" />
                                                 <label class="form-check-label">
                                                     I agree to the terms of service
                                                 </label>
@@ -141,7 +142,10 @@
                                 <b>Register and try it out! Good luck!</b>
                             </p>
                             <div class="text-center">
-                                <a href="#" class="btn-preview btn button-cleanandno blacklegocity btn-lg animated puffIn animDelay08 animSpeed06" data-toggle="modal" data-target="#login" data-appear-anim-style="puffIn">Log In</a>
+                                <a href="#" class="btn-preview btn button-cleanandno blacklegocity btn-lg animated puffIn animDelay08 animSpeed06 if-not-logged-in-button" data-toggle="modal" data-target="#login" data-appear-anim-style="puffIn">Log In</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="btn-preview btn button-cleanandno blacklegocity btn-lg animated puffIn animDelay08 animSpeed06 if-logged-in-button" data-appear-anim-style="puffIn">Go to Profile</a>
                             </div>
                         </div>
                     </div>
@@ -169,7 +173,8 @@
                             that will help to make it automated! I really like this games now and I add new functions quite often. <br>
                             <b>Register and try it out! Good luck!</b>
                         </p>
-                        <a href="#" class="btn btn-preview button-cleanandno blacklegocity mobile-button float-lg-none puffIn animDelay08 animSpeed06" data-toggle="modal" data-target="#login" data-appear-anim-style="puffIn">Log In</a>
+                        <a href="#" class="btn btn-preview button-cleanandno blacklegocity mobile-button float-lg-none puffIn animDelay08 animSpeed06 if-not-logged-in-button" data-toggle="modal" data-target="#login" data-appear-anim-style="puffIn">Log In</a>
+                        <a href="#" class="btn btn-preview button-cleanandno blacklegocity mobile-button float-lg-none puffIn animDelay08 animSpeed06 if-logged-in-button" data-appear-anim-style="puffIn">Go to Profile</a>
                     </div>
                 </div>
             </div>

@@ -1,11 +1,11 @@
-let api = new (function API() {
+let api = new(function API() {
     this.api_token = localStorage.getItem('asmodeus-api-token');
     this.api_url = 'https://api.asmodeus.app/'
 
     this.performRequest = function(http_method, method, params) {
         let self = this;
         params = params || {};
-        if(this.api_token) 
+        if (this.api_token)
             params.token = this.api_token;
         return new Promise(function(resolve, reject) {
             $.ajax({
@@ -14,7 +14,7 @@ let api = new (function API() {
                 data: params,
                 cache: false,
                 success: (v) => {
-                    if(v.error) {
+                    if (v.error) {
                         reject({
                             'type': 'api_error',
                             'xhr': null,
@@ -26,7 +26,7 @@ let api = new (function API() {
                     }
                 },
                 error: (xhr, status, error) => {
-                    if(xhr.responseJSON) {
+                    if (xhr.responseJSON) {
                         reject({
                             'type': 'api_error',
                             'xhr': xhr,
@@ -61,11 +61,15 @@ let api = new (function API() {
             $('#user-logged-in-info img').attr('src', resp.avatar);
 
 
-            $('.if-logged-in').css({'display': 'block'});
-            $('.if-not-logged-in').css({'display': 'none'});
+            $('.if-logged-in').css({ 'display': 'flex' });
+            $('.if-not-logged-in').css({ 'display': 'none' });
+            $('.if-not-logged-in-button').css({ 'display': 'none' });
+            $('.if-logged-in-button').css({ 'display': 'inline-block' });
         }).catch(function(error) {
-            $('.if-logged-in').css({'display': 'none'});
-            $('.if-not-logged-in').css({'display': 'block'});
+            $('.if-logged-in').css({ 'display': 'none' });
+            $('.if-not-logged-in').css({ 'display': 'flex' });
+            $('.if-logged-in-button').css({ 'display': 'none' });
+            $('.if-not-logged-in-button').css({ 'display': 'inline-block' });
         });
     }
 
@@ -76,7 +80,8 @@ let api = new (function API() {
 
     this.login = function(username, password) {
         return this.performPostRequest('auth/login', {
-            'username': username, 'password': password
+            'username': username,
+            'password': password
         }).then(function(resp) {
             localStorage.setItem('asmodeus-api-token', resp.token);
             return resp;
@@ -85,7 +90,9 @@ let api = new (function API() {
 
     this.register = function(username, email, password) {
         return this.performPostRequest('auth/register', {
-            'username': username, 'email': email, 'password': password
+            'username': username,
+            'email': email,
+            'password': password
         });
     }
 

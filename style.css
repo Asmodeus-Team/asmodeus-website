@@ -559,6 +559,14 @@ a {
         display: block;
         width: 100%;
     }
+    .profileinfo {
+        align-items: left;
+        justify-content: left;
+    }
+    .proforient {
+        display: flex;
+        align-items: left;
+    }
 }
 
 @media (max-width: 767px) {
@@ -579,5 +587,9 @@ a {
 /* Hide if logged in */
 
 .if-logged-in {
+    display: none;
+}
+
+.lhide {
     display: none;
 }
