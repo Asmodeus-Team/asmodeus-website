@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>таймер какойта</title>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<style>
+
+html,
+body,
+#wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: #F0645E;
+}
+
+#wrap {
+	display: flex;
+}
+
+#timer {
+	color: #ffffff;
+	font-family: "Montserrat";
+	margin: auto;
+	text-align: center;
+}
+
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="timer"></div>
+		</div>
+		<script>
+
+var timer = new (function Timer(w, e) {
+	this.elem = e;
+	this.deadline = new Date(2020, 5, 1, 0, 0, 0, 0);
+
+	this.tick = function() {
+		var delta = Math.floor((this.deadline.getTime() - new Date().getTime()) / 1000);
+
+		if(delta <= 0) {
+			this.elem.innerHTML = "If you see this, we're fucked up,<br><s>Again</s>";
+		}
+
+		var days = Math.floor(delta / 86400);
+		delta %= 86400;
+		var hours = Math.floor(delta / 3600);
+		delta %= 3600;
+		var minutes = Math.floor(delta / 60);
+		var seconds = delta % 60;
+
+		hours = (hours < 10 ? "0" : "") + hours;
+		minutes = (minutes < 10 ? "0" : "") + minutes;
+		seconds = (seconds < 10 ? "0" : "") + seconds;
+
+		var time_string = hours + ":" + minutes + ":" + seconds;
+		var days_string = "and " + days + " day" + (days > 1 ? "s" : "");
+		this.elem.innerHTML = time_string + "<br>" + days_string;
+
+	}
+
+	this.resize = function() {
+		this.elem.style.fontSize = Math.min(Math.max(window.innerWidth / 15, 20), 60) + "px";
+	}
+
+	this.ticker = function() {
+		this.tick();
+		var _self = this;
+		w.requestAnimationFrame(function() {
+			_self.ticker();
+		});
+	}
+
+	this.initialize = function() {
+		var _self = this;
+		w.addEventListener("resize", function() {
+			_self.resize();
+		});
+		this.resize();
+		this.ticker();
+	}
+
+})(window, document.querySelector("#timer"));
+
+timer.initialize();
+
+		</script>
+	</body>
+</html>
