@@ -9,6 +9,10 @@ $(function() {
 });
 
 $(window).on('load', function() {
+    if(window.location.hash != "#devmode") {
+        window.location.hash = "";
+        window.location.pathname = "countdown";
+    }
     animateWhenVisible();
 })
 
