@@ -8,13 +8,13 @@ $(function() {
     });
 });
 
-$(window).on('load', function() {
-    if(window.location.hash != "#devmode") {
-        window.location.hash = "";
-        window.location.pathname = "countdown";
-    }
-    animateWhenVisible();
-})
+//$(window).on('load', function() {
+//    if(window.location.hash != "#devmode") {
+//        window.location.hash = "";
+//        window.location.pathname = "countdown";
+//    }
+//    animateWhenVisible();
+//})
 
 function headerUpWhat() {
     $(".site-navigation a").click(function(e) {
