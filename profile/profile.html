@@ -28,7 +28,7 @@
                 <div class="row">
                     <div class="col">
                         <nav class="navbar row navbar-light navbar-expand-md pb-0" role="navigation">
-                            <a class="asmologo lttstorebut-black link-style pb-0" href="./"><img src="../logo_mainsite.png" alt="logo" class="mr-2" />
+                            <a class="asmologo lttstorebut-black link-style" href="./"><img src="../logo_mainsite.png" alt="logo" class="mr-2" />
                                 <strong>Asmodeus</strong>
                             </a>
                             <button id="nav-toggle" type="button" class="ml-auto ui-navbar-toggler navbar-toggler border-0 p-0 menu-icon-circles" data-toggle="collapse" data-target=".headernav-main" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,14 +37,14 @@
                             <div class="collapse navbar-collapse headernav-main">
                                 <ul class="site-navigation nav navbar-nav ml-auto">
                                     <li class="nav-item if-not-logged-in">
-                                        <a href="#" class="nav-link buttonnav lttstorebut-black bold normaltext" data-toggle="modal" data-target="#login">Log In</a>
+                                        <a href="#" class="nav-link buttonnav lttstorebut-black bold normaltext pt-0 pb-0" data-toggle="modal" data-target="#login">Log In</a>
                                     </li>
                                     <li class="nav-item if-not-logged-in">
-                                        <a href="#" class="nav-link buttonnav lttstorebut-black bold normaltext" data-toggle="modal" data-target="#register">Register</a>
+                                        <a href="#" class="nav-link buttonnav lttstorebut-black bold normaltext pt-0" data-toggle="modal" data-target="#register">Register</a>
                                     </li>
                                     <li class="nav-item if-logged-in dividenytwooftwowhat proforient" id="user-logged-in-info">
                                         <img src="../img/Cg5WzPmbDMM.jpg" class="img-fluid img-userprofilepic profileinfo" alt="userprofilepicture" />
-                                        <h5 class="username-name nomarginatallwhyidk lttstorebut-black profileinfo usernamepadding">
+                                        <h5 class="username-name nomarginatallwhyidk lttstorebut-black profileinfo usernamepadding bold normaltext">
                                             username_intro
                                         </h5>
                                     </li>
@@ -66,7 +66,7 @@
                 <div class="row">
                     <div class="col">
                         <nav class="navbar navbar-light navbar-expand-md pt-0 pb-0" role="navigation">
-                            <div class="collapse navbar-collapse">
+                            <div class="collapse navbar-collapse headernav-main">
                                 <ul class="site-navigation nav navbar-nav m-auto navigation">
                                     <li class="nav-item mr-3">
                                         <a href="#" class="nav-link buttonnav lttstorebut-black bold bigtext pt-0">Profile</a>
@@ -91,23 +91,114 @@
             </div>
         </div>
         <!-- top menu -->
+
+        <!-- loginandregistershithere -->
+        <div class="main light-huch" id="loginandregistershithere">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div id="register" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="nomarginatallwhyidk store-black h4-modal">
+                                            Register in Asmodeus
+                                        </h4>
+                                        <a href="#" class="btn btn-d btn-lg btn-isbtswhat-no" data-dismiss="modal" aria-label="Close"><span class="fa fa-close close"></span></a>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="form-register" data-form-type="form" novalidate data-success-msg="You have successfully registered." data-fail-msg="Sorry, we couldn't register you.">
+                                            <div class="form-group">
+                                                <input class="form-control blacklegocity" required placeholder="Username" type="text" data-validation-required-message="You have to enter an user name." name="username" />
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control blacklegocity" required placeholder="Email" type="email" data-error-validation-msg="You should enter a valid email address." data-validation-required-message="You have to enter an email address." name="email" />
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control blacklegocity" required placeholder="Password" type="password" data-validation-required-message="You have to enter the password." name="password" />
+                                            </div>
+                                            <div class="form-check blacklegocity">
+                                                <input class="form-check-input" type="checkbox" id="agreetotos" data-validation-minchecked-message="You must agree to the terms of service." data-validation-minchecked-minchecked="1" name="agreetotos" />
+                                                <label class="form-check-label">
+                                                    I agree to the terms of service
+                                                </label>
+                                            </div>
+                                            <button class="btn btn-block button-cleanandno blacklegocity btn-lg" type="submit">
+                                                Register
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="login" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="nomarginatallwhyidk store-black h4-modal">
+                                            Login to Asmodeus
+                                        </h4><a href="#" class="btn btn-d btn-lg btn-isbtswhat-no" data-dismiss="modal" aria-label="Close"><span class="fa fa-close close"></span></a>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="form-login" data-form-type="form" novalidate data-success-msg="You have successfully logged in." data-fail-msg="Failed to log in.">
+                                            <div class="form-group">
+                                                <input name="username" class="form-control blacklegocity" placeholder="Username" required type="text" data-validation-required-message="You have to enter a username." />
+                                            </div>
+                                            <div class="form-group">
+                                                <input name="password" class="form-control blacklegocity" placeholder="Password" required type="password" data-validation-required-message="You have to enter the password." />
+                                            </div>
+                                            <button class="btn btn-lg btn-block button-cleanandno blacklegocity" type="submit">Log in</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- loginandregistershithere -->
         
         <!-- main profile -->
         <div class="main " id="main_profile">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">
-                        <div class="avatar pl-5 pt-5">
+                        <div class="avatar pl-5 pb-5 pt-5">
                             <img src="../img/unknown_color.jpg" class="img-fluid rounded" alt="Avatar">
                         </div>
                     </div>
-                    <div class="col-lg-7">Вилкенсон это ты</div>
+                    <div class="col-lg-7">Помогите я хочу гуся</div>
                 </div>
             </div>
         </div>
         <!-- main profile -->
 
+        <!-- footer -->
+        <div class="main bgc-pastel-red dark-huch " id="footer">
+            <div class="container footer-p">
+                <div class="row">
+                    <div class="col">
+                        <h6 class="text-lg-center h6-style">
+                            Created by&nbsp;<a class="float-lg-none" href="https://technological.space" target="_blank">MTechnologies Organization</a>.&nbsp;Developed by vapron_va, Maksandra and UndefinedValue.&nbsp;Designed by Maksandra. Illustrated
+                            by nni_barrel. <strong>©<span>&nbsp;</span>2020</strong><br>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+
     </div>
+
+    <script src="../js/jquery-3.3.1.js?6921"></script>
+    <script src="../js/bootstrap.bundle.js?6526"></script>
+    <script src="../js/api.js?22131"></script>
+    <script src="../js/main.js?2213"></script>
+    <script src="../js/jqBootstrapValidation.js"></script>
+    <script src="../js/forms.js?1713"></script>
+    <!-- JS help me idk what im doing -->
+
 </body>
 
 </html>
