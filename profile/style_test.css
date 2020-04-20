@@ -210,7 +210,7 @@ a:hover {
 }
 
 
-/* Bold, Big-size and Normal-size text */
+/* Bold, name-size, Big-size and Normal-size text */
 .bold {
     font-weight: 700;
 }
@@ -220,7 +220,41 @@ a:hover {
 .normaltext {
     font-size: 1rem;
 }
+.name-text {
+    font-size: 1.4rem;
+}
 
+/* Big img settings */
+.avatar-section {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #515151;
+}
+.exmpl {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exmpl img {
+    min-height: 100%;
+    min-width: auto;
+}
+
+/* Badge settings */
+.badge-border {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(125, 162, 231);
+    border-radius: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.badge-text {
+    color: rgb(125, 162, 231);
+    font-weight: 600;
+    letter-spacing: 0.03rem;
+}
 
 /* Footer Margin */
 
@@ -353,6 +387,14 @@ a:hover {
     display: flex;
 }
 
+.profile-main-info {
+    display: inline-block;
+    align-items: left;
+    justify-content: left;
+    margin: 0;
+    display: flex;
+}
+
 .usernamepadding {
     padding-left: 5px;
 }
@@ -463,6 +505,7 @@ h4,
 h5,
 h6,
 p,
+span,
 label,
 .btn,
 a {
@@ -574,6 +617,13 @@ a {
     .profileinfo {
         align-items: left;
         justify-content: left;
+    }
+    .profile-main-info {
+        align-items: center;
+        justify-content: center;
+    }
+    .avatar {
+        justify-content: center;
     }
     .proforient {
         display: flex;
