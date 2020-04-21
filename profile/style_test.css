@@ -213,7 +213,7 @@ a:hover {
 /* Likanion's CSS ..................................................................................... */
 /* Bold, name-size, Big-size and Normal-size text */
 .bold {
-    font-weight: 700;
+    font-weight: 600;
 }
 .bigtext {
     font-size: 1.3rem;
@@ -264,9 +264,9 @@ a:hover {
 }
 .user-stats-settings {
     padding-bottom: 0.03rem;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.1rem;
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.02rem;
 }
 
 /* Progress Bar */
