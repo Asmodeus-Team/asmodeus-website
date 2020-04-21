@@ -232,9 +232,10 @@ a:hover {
 }
 .avatar-position {
     display: flex;
-    -ms-flex-align: right !important;
-    align-items: right !important;
+    -ms-flex-align: right;
+    align-items: right;
     justify-content: right;
+    float: right;
 }
 .avatar-padding {
     padding-right: 4rem;
@@ -672,7 +673,11 @@ a {
     }
     .avatar-position {
         align-items: center;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
         justify-content: center;
+        float: none;
     }
     .user-stats-settings {
         padding-left: 0.5rem;
