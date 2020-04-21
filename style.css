@@ -554,11 +554,6 @@ a {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
-    .dividenytwooftwowhat,
-    .dividenytwooftwowhat .main {
-        display: block;
-        width: 100%;
-    }
     .profileinfo {
         align-items: left;
         justify-content: left;
@@ -573,6 +568,11 @@ a {
     .page-container {
         overflow-x: hidden;
         position: relative;
+    }
+    .dividenytwooftwowhat,
+    .dividenytwooftwowhat .main {
+        display: block;
+        width: 100%;
     }
     .partofdividing2 .container {
         padding-left: 0;
