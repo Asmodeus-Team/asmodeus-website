@@ -211,6 +211,12 @@ a:hover {
 
 
 /* Likanion's CSS ..................................................................................... */
+
+/* main navbar padding */
+.navbar-asmo {
+    padding-bottom: 0rem;
+}
+
 /* Bold, name-size, Big-size and Normal-size text */
 .bold {
     font-weight: 600;
@@ -681,6 +687,9 @@ a {
     }
     .user-stats-settings {
         padding-left: 0.5rem;
+    }
+    .navbar-asmo {
+        padding-bottom: 0.5rem;
     }
 }
 
