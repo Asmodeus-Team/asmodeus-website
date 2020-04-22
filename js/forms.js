@@ -22,7 +22,8 @@ $(function() {
                     password = $(form).find('input[name=password]').val();
                     api.register(username, email, password).then(function(resp) {
                         showMessage(form);
-                        location.reload();
+                        // location.reload();
+                        location.hash = '#check-email'
                     }).catch(function(error) {
                         showError(form, error.error);
                     });
@@ -30,9 +31,7 @@ $(function() {
 
 
                 default:
-                    // ВЫЗЫВВАЕЦОО КАДА ТЫЦКНУЛИ НА САСАБМИТ
                     if (!form.attr('action')) {
-                        // А ТУТ ЕСЛИ НЕТ ЕКШЕНА
                         event.preventDefault();
                         var processorFile = getProcessorPath(form);
                         var formData = {};
