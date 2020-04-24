@@ -42,7 +42,7 @@ body,
 
 var timer = new (function Timer(w, e) {
 	this.elem = e;
-	this.deadline = new Date(2020, 5, 1, 0, 0, 0, 0);
+	this.deadline = new Date(2020, 6, 1, 0, 0, 0, 0);
 
 	this.tick = function() {
 		var delta = Math.floor((this.deadline.getTime() - new Date().getTime()) / 1000);
