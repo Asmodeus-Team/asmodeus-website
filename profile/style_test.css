@@ -212,30 +212,40 @@ a:hover {
 
 /* Likanion's CSS ..................................................................................... */
 
+
 /* main navbar padding */
+
 .navbar-asmo {
     padding-bottom: 0rem;
 }
 
+
 /* Bold, name-size, Big-size and Normal-size text */
+
 .bold {
     font-weight: 600;
 }
+
 .bigtext {
     font-size: 1.3rem;
 }
+
 .normaltext {
     font-size: 1rem;
 }
+
 .name-text {
     font-size: 1.4rem;
 }
 
+
 /* Big img settings */
+
 .avatar {
     height: 200px;
     width: 200px;
 }
+
 .avatar-position {
     display: flex;
     -ms-flex-align: right;
@@ -243,6 +253,7 @@ a:hover {
     justify-content: right;
     float: right;
 }
+
 .avatar-padding {
     padding-right: 4rem;
     padding-left: 0rem;
@@ -250,7 +261,9 @@ a:hover {
     padding-bottom: 0rem;
 }
 
+
 /* Badge settings */
+
 .badge-border {
     border-width: 2px;
     border-style: solid;
@@ -259,16 +272,20 @@ a:hover {
     padding-right: 10px;
     padding-left: 10px;
 }
+
 .badge-text {
     color: rgb(125, 162, 231);
     font-weight: 600;
     letter-spacing: 0.03rem;
 }
 
+
 /* User's Stats settings*/
+
 .user-stats {
     list-style-type: none;
 }
+
 .user-stats-settings {
     padding-bottom: 0.03rem;
     font-weight: 500;
@@ -276,12 +293,72 @@ a:hover {
     letter-spacing: 0.02rem;
 }
 
+
 /* Progress Bar */
+
 .storage-quota {
     align-items: center;
     text-align: center;
     justify-content: center;
 }
+
+
+/* vapronva's CSS inside of Likanion's CSS */
+
+.progress-value-start {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    top: -16px;
+}
+
+.progress-value-end {
+    font-size: 16px;
+    font-weight: 700;
+    top: -16px;
+    text-align: right;
+}
+
+.progress {
+    margin-top: 4px;
+    height: 13px;
+    background: #333;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible;
+}
+
+.progress .progress-bar {
+    position: relative;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+}
+
+.progress .progress-value {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    position: absolute;
+    top: 16.5px;
+    right: -25px;
+}
+
+.progress .progress-bar:after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    background: #fff;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    right: -4.8px;
+    z-index: 1;
+    transform: rotate(35deg);
+}
+
+
 /* Likanion's CSS ..................................................................................... */
 
 
