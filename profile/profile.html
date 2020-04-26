@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="description" content="Welcome to Asmodeus platform!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css?4677">
-    <link rel="stylesheet" type="text/css" href="style.css?4357">
-    <link rel="stylesheet" type="text/css" href="./css/animate.css?4948">
-    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
+    <link rel="shortcut icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css?4677">
+    <link rel="stylesheet" type="text/css" href="style_test.css?4357">
+    <link rel="stylesheet" type="text/css" href="../css/animate.css?4948">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta property="og:title" content="Asmodeus" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://asmodeus.technological.space" />
@@ -27,8 +27,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <nav class="navbar row navbar-light navbar-expand-md" role="navigation">
-                            <a class="asmologo lttstorebut-black link-style" href="./"><img src="logo_mainsite.png" alt="logo" class="mr-2" />
+                        <nav class="navbar row navbar-light navbar-expand-md navbar-asmo" role="navigation">
+                            <a class="asmologo lttstorebut-black link-style" href="./"><img src="../logo_mainsite.png" alt="logo" class="mr-2" />
                                 <strong>Asmodeus</strong>
                             </a>
                             <button id="nav-toggle" type="button" class="ml-auto ui-navbar-toggler navbar-toggler border-0 p-0 menu-icon-circles" data-toggle="collapse" data-target=".headernav-main" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,14 +37,14 @@
                             <div class="collapse navbar-collapse headernav-main">
                                 <ul class="site-navigation nav navbar-nav ml-auto">
                                     <li class="nav-item if-not-logged-in">
-                                        <a href="#" class="nav-link buttonnav lttstorebut-black" data-toggle="modal" data-target="#login">Log In</a>
+                                        <a href="#" class="nav-link buttonnav lttstorebut-black bold normaltext pt-0 pb-0" data-toggle="modal" data-target="#login">Log In</a>
                                     </li>
                                     <li class="nav-item if-not-logged-in">
-                                        <a href="#" class="nav-link buttonnav lttstorebut-black" data-toggle="modal" data-target="#register">Register</a>
+                                        <a href="#" class="nav-link buttonnav lttstorebut-black bold normaltext pt-0" data-toggle="modal" data-target="#register">Register</a>
                                     </li>
                                     <li class="nav-item if-logged-in dividenytwooftwowhat proforient" id="user-logged-in-info">
-                                        <img src="./img/Cg5WzPmbDMM.jpg" class="img-fluid img-userprofilepic profileinfo" alt="userprofilepicture" />
-                                        <h5 class="username-name nomarginatallwhyidk lttstorebut-black profileinfo usernamepadding">
+                                        <img src="../img/Cg5WzPmbDMM.jpg" class="img-fluid img-userprofilepic profileinfo" alt="userprofilepicture" />
+                                        <h5 class="username-name nomarginatallwhyidk lttstorebut-black profileinfo usernamepadding bold normaltext">
                                             username_intro
                                         </h5>
                                     </li>
@@ -59,6 +59,38 @@
             </div>
         </div>
         <!-- header -->
+
+        <!-- top menu -->
+        <div class="main header-st bgc-pastel-red dark-huch" id="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar navbar-light navbar-expand-md pt-0 pb-0" role="navigation">
+                            <div class="collapse navbar-collapse headernav-main">
+                                <ul class="site-navigation nav navbar-nav m-auto navigation">
+                                    <li class="nav-item mr-3">
+                                        <a href="#" class="nav-link buttonnav lttstorebut-black bold bigtext pt-0">Profile</a>
+                                    </li>
+                                    <li class="nav-item mr-3">
+                                        <a href="#" class="nav-link buttonnav lttstorebut-black bold bigtext pt-0">Games</a>
+                                    </li>
+                                    <li class="nav-item mr-3">
+                                        <a href="#" class="nav-link buttonnav lttstorebut-black bold bigtext pt-0">My Maps</a>
+                                    </li>
+                                    <li class="nav-item mr-3">
+                                        <a href="#" class="nav-link buttonnav lttstorebut-black bold bigtext pt-0">My Sheets</a>
+                                    </li>
+                                    <li class="nav-item mr-3">
+                                        <a href="#" class="nav-link buttonnav lttstorebut-black bold bigtext pt-0">My Files</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- top menu -->
 
         <!-- loginandregistershithere -->
         <div class="main light-huch" id="loginandregistershithere">
@@ -127,130 +159,68 @@
         </div>
         <!-- loginandregistershithere -->
 
-        <div class="dividenytwooftwowhat" id="first-intro">
-            <!-- firstpartof-first -->
-            <div class="main partofdividing2 store-black light-huch fillingscreen d-lg-flex d-none" id="firstpartof-first">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1 class="text-lg-center main-sm store-black animated puffIn" data-appear-anim-style="puffIn">
-                                Hello!
-                            </h1>
-                            <p class="animDelay04 animated fadeIn p-style" data-appear-anim-style="fadeIn">
-                                I am Asmodeus! <br> In my stupidity, I've accepted an offer that changed my entire life. Now I am forced to help people to play board games. I drew maps, filled character sheets, etc. <br> I've asked my slaves to create
-                                application that will help to make it automated! I really like this games now and I add new functions quite often. <br>
-                                <b>Register and try it out! Good luck!</b>
-                            </p>
-                            <div class="text-center">
-                                <a href="#" class="btn-preview btn button-cleanandno blacklegocity btn-lg animated puffIn animDelay08 animSpeed06 if-not-logged-in-button" data-toggle="modal" data-target="#login" data-appear-anim-style="puffIn">Log In</a>
-                            </div>
-                            <div class="text-center">
-                                <a href="#" class="btn-preview btn button-cleanandno blacklegocity btn-lg animated puffIn animDelay08 animSpeed06 if-logged-in-button" data-appear-anim-style="puffIn">Go to Profile</a>
-                            </div>
-                        </div>
+        <!-- main profile -->
+        <div class="main " id="main_profile">
+            <div class="container">
+                <div class="row pt-4 pb-4">
+                    <div class="col-md-6 avatar-padding">
+                        <img src="../img/test2.jpg" alt="AVATAR" width="200px" height="200px" class="avatar img-fluid img-thumbnail avatar-position mx-auto d-flex">
                     </div>
-                </div>
-            </div>
-            <!-- firstpartof-first -->
-
-            <!-- secondpartof-first -->
-            <div class="main partofdividing2 animDelay06 bg-asmodey-prototype-bg-intro dark-huch fillingscreen d-lg-flex d-none" id="secondpartof-first">
-            </div>
-            <!-- secondpartof-first -->
-        </div>
-
-
-        <div class="main store-black d-lg-none d-xl-none d-flex" id="mobile-firstpartof-first">
-            <!-- mobile-firstpartof-first -->
-            <div class="container main-sm">
-                <div class="row">
-                    <div class="col">
-                        <h1 class="text-lg-center main-sm store-black animated puffIn" data-appear-anim-style="puffIn">
-                            Hello!
-                        </h1>
-                        <p class="animDelay04 animated fadeIn" data-appear-anim-style="fadeIn">
-                            I am Asmodeus! <br> In my stupidity, I'd accepted an offer that had changed my entire life. As a result I had been forced to help people to play board games. I'd been drawing maps, filling character sheets and doing other stuff
-                            of this kind. That's why lately I've asked my slaves to create an application that will help to make it automated! I really like these games now and quite often add new functions. <br>
-                            <b>Register and try it out! Good luck!</b>
-                        </p>
-                        <a href="#" class="btn btn-preview button-cleanandno blacklegocity mobile-button float-lg-none puffIn animDelay08 animSpeed06 if-not-logged-in-button" data-toggle="modal" data-target="#login" data-appear-anim-style="puffIn">Log In</a>
-                        <a href="#" class="btn btn-preview button-cleanandno blacklegocity mobile-button float-lg-none puffIn animDelay08 animSpeed06 if-logged-in-button" data-appear-anim-style="puffIn">Go to Profile</a>
-                    </div>
-                </div>
-            </div>
-            <!-- mobile-firstpartof-first -->
-        </div>
-
-        <div class="main light-huch full-bridge-rectifier d-lg-none d-xl-none d-flex" id="mobile-secondpartof-first">
-            <!-- mobile-secondpartof-first -->
-            <div class="container main-sm">
-                <div class="row">
-                    <div class="col">
-                        <img src="img/asmodey_prototype-bg-intro.png" class="img-fluid margmobile dark-huch" alt="asmodey_prototype bg-intro" />
-                    </div>
-                </div>
-            </div>
-            <!-- mobile-secondpartof-first -->
-        </div>
-
-
-        <div class="dividenytwooftwowhat" id="second-news">
-            <!-- firstpartof-second -->
-            <div class="main partofdividing2 store-black" id="firstpartof-second">
-                <div class="container addsmolpad">
-                    <div class="row">
-                        <div class="col-12 bgc-pastel-red">
+                    <div class="col-md-6">
+                        <div class="container">
                             <div class="row">
-                                <div class="col-12">
-                                    <h2 class="store-black text-lg-center h2-style main-md">
-                                        <strong>Latest Update:</strong>
-                                    </h2>
-                                    <img src="img/Screenshot%202020-02-07%20at%2022.09.28.png" class="img-fluid mx-auto d-block" alt="Screenshot%202020 02-07%20at%2022.09.28" />
-                                    <h3 class="main-md h3-style text-lg-center">
-                                        Finally, we've opened a beta-testing!
-                                    </h3>
+                                <div class="col-md-auto d-flex align-items-center profile-main-info pl-0">
+                                    <span class="nomarginatallwhyidk lttstorebut-black bold name-text">
+                                        Likanion
+                                    </span>
+                                </div>
+                                <div class="col-md-auto d-flex align-items-center profile-main-info pl-0">
+                                    <span class="badge-border badge-text nomarginatallwhyidk normaltext">Developer</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-auto pt-3 pb-0 pr-0 pl-0">
+                                    <ul class="user-stats nomarginatallwhyidk p-0">
+                                        <li class="user-stats-settings">Games Created: <span id="GC">3</span></li>
+                                        <li class="user-stats-settings">Games Played: <span id="GP">69</span></li>
+                                        <li class="user-stats-settings">Longest Game: <span id="LG">18</span> Hours</Li>
+                                        <li class="user-stats-settings">Maps Created: <span id="MC">23</span></li>
+                                        <li class="user-stats-settings">Sheets Created: <span id="SC">0</span></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- firstpartof-second -->
+        </div>
+        <!-- main profile -->
 
-            <!-- secondpartof-second -->
-            <div class="main partofdividing2 store-black" id="secondpartof-second">
-                <div class="container addsmolpad">
-                    <div class="row">
-                        <div class="col-12 col-lg-12 align-self-start">
-                            <h1 class="main-md store-black mx-auto d-block">
-                                <strong>You wonder what I can do?</strong>
-                            </h1>
-                            <ul>
-                                <li>
-                                    <p class="animated fadeIn animSpeed04 none" data-appear-anim-style="fadeIn">
-                                        I can help you to create virtual maps and put markers there!
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="animSpeed04 animDelay02 animated fadeIn" data-appear-anim-style="fadeIn">
-                                        I can create and fill character sheets for you.
-                                    </p>
-                                </li>
-                                <li>
-                                    <p class="animated fadeIn animSpeed04 animDelay04" data-appear-anim-style="fadeIn">
-                                        You can share your maps and markers with other people!
-                                    </p>
-                                </li>
-                            </ul>
+        <!-- progress bar -->
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex storage-quota">
+                    <span class="nomarginatallwhyidk lttstorebut-black bold name-text">
+                        Storage Quota (15.32 MB / 128 MB) 
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="offset-lg-2 col-lg-8">
+                        <div class="progress">
+                            <div class="progress-bar" style="width:40%; background: #f27a75;">
+                                <div class="progress-value">40%</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- secondpartof-second -->
         </div>
+        <!-- progress bar -->
 
         <!-- footer -->
-        <div class="main bgc-pastel-red dark-huch " id="footer">
+        <!-- <div class="main bgc-pastel-red dark-huch " id="footer">
             <div class="container footer-p">
                 <div class="row">
                     <div class="col">
@@ -261,17 +231,17 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- footer -->
 
     </div>
 
-    <script src="./js/jquery-3.3.1.js?6921"></script>
-    <script src="./js/bootstrap.bundle.js?6526"></script>
-    <script src="./js/api.js?22131"></script>
-    <script src="./js/main.js?2213"></script>
-    <script src="./js/jqBootstrapValidation.js"></script>
-    <script src="./js/forms.js?1713"></script>
+    <script src="../js/jquery-3.3.1.js?6921"></script>
+    <script src="../js/bootstrap.bundle.js?6526"></script>
+    <script src="../js/api.js?22131"></script>
+    <script src="../js/main.js?2213"></script>
+    <script src="../js/jqBootstrapValidation.js"></script>
+    <script src="../js/forms.js?1713"></script>
     <!-- JS help me idk what im doing -->
 
 </body>
