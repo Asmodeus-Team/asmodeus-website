@@ -3,18 +3,15 @@ $(function() {
     headerUpWhat();
     dropdownHeader();
     $('.nav-item [data-active-page]').addClass($('.nav-item [data-active-page]').attr('data-active-page'));
+    $('[data-toggle="tooltip"]').tooltip();
     $("#logout-btn").click(function(e) {
         api.logout();
     });
 });
 
-//$(window).on('load', function() {
-//    if(window.location.hash != "#devmode") {
-//        window.location.hash = "";
-//        window.location.pathname = "countdown";
-//    }
-//    animateWhenVisible();
-//})
+$(window).on('load', function() {
+    animateWhenVisible();
+})
 
 function headerUpWhat() {
     $(".site-navigation a").click(function(e) {
