@@ -38,24 +38,6 @@ a:hover {
 }
 
 
-/* My Maps: Width */
-
-.sidebarmenu {
-    width: 10%;
-}
-
-.mainpart_maps {
-    width: 90%;
-}
-
-
-/* Padding for SecondGroup in Main */
-
-.addsmolpad {
-    padding: 50px;
-}
-
-
 /* The Main Thing */
 
 .main {
@@ -72,26 +54,6 @@ a:hover {
 }
 
 .main .container {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-
-/* The Main Thing except it's for MyMaps */
-
-.main-mymaps {
-    clear: both;
-    background: 50% 50% no-repeat;
-    padding: 0 50px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: relative;
-    display: flex;
-}
-
-.main-mymaps .container {
     padding-left: 0;
     padding-right: 0;
 }
@@ -237,13 +199,18 @@ a:hover {
 .name-text {
     font-size: 1.4rem;
 }
+.invittext {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
 
 
 /* Big img settings */
 
-.avatar {
-    height: 200px;
-    width: 200px;
+.previewimg {
+    height: 260px;
+    width: 367.5px;
 }
 
 .avatar-position {
@@ -254,23 +221,24 @@ a:hover {
     float: right;
 }
 
-.avatar-padding {
-    padding-right: 4rem;
-    padding-left: 0rem;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
+.previewimg-margin {
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 
 /* Badge settings */
 
-.badge-border {
-    border-width: 2px;
+.brd {
+    border-width: 3 px;
     border-style: solid;
-    border-color: rgb(125, 162, 231);
+    border-color: rgb(0, 0, 0);
     border-radius: 3px;
-    padding-right: 10px;
-    padding-left: 10px;
+}
+
+.shdbrd {
+    box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.34);
 }
 
 .badge-text {
@@ -294,14 +262,23 @@ a:hover {
 }
 
 
-/* Progress Bar */
+/* Content Center */
 
-.storage-quota {
+.contentcenter {
+    display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
 }
 
+
+/* Game padding */
+
+.game-padding {
+    padding-left: 9rem;
+    padding-right: 9rem;
+    padding-bottom: 1.5rem;
+}
 
 /* vapronva's CSS inside of Likanion's CSS */
 
