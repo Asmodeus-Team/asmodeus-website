@@ -228,16 +228,16 @@ a:hover {
 }
 
 
-/* Badge settings */
+/* Border settings */
 
-.brd {
+.main-border {
     border-width: 3 px;
     border-style: solid;
     border-color: rgb(0, 0, 0);
     border-radius: 3px;
 }
 
-.shdbrd {
+.main-border-shadow {
     box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.34);
 }
 
@@ -275,8 +275,8 @@ a:hover {
 /* Game padding */
 
 .game-padding {
-    padding-left: 9rem;
-    padding-right: 9rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
     padding-bottom: 1.5rem;
 }
 
