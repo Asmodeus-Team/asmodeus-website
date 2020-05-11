@@ -179,15 +179,12 @@ a:hover {
 /* Games menu's padding */
 
 .game-padding {
-    padding-left: 7rem;
-    padding-right: 7rem;
+    max-width: 850px;
     padding-bottom: 1.5rem;
 }
 .gametitle {
-    display: flex;
-    position: absolute;
-    margin: 0;
-    margin-top: 0.5rem;
+    word-wrap: break-word;
+    max-width: 450px;
 }
 .gamehost {
     display: flex;
@@ -204,6 +201,11 @@ a:hover {
 .gamehost-players-padding {
     margin: 0;
     padding-right: 0.5rem;
+}
+.notes-settings {
+    word-wrap: break-word;
+    max-width: 390px;
+    font-size: 0.9rem;
 }
 
 /* Big img settings */
@@ -268,7 +270,23 @@ a:hover {
     justify-content: center;
 }
 
-
+/* Button Join Game */
+a.buttonjoin {
+  display: flex;
+  font-size: 0.8rem;
+  text-align: center;
+  user-select: none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.2rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+  transition: all .218s ease 0s;
+}
 /* Likanion's CSS ..................................................................................... */
 
 
@@ -522,6 +540,7 @@ h5,
 h6,
 p,
 span,
+button,
 ul,
 label,
 .btn,
@@ -611,14 +630,14 @@ a {
 
 /* Mobile adjustments */
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .main {
         padding-left: 20px;
         padding-right: 20px;
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     .container {
         width: 100%;
     }
@@ -631,17 +650,21 @@ a {
         align-items: left;
     }
     .game-padding {
-        padding-left: 6rem;
-        padding-right: 6rem;
+        max-width: 370px;
         padding-bottom: 1.5rem;
+    }
+    .gametitle {
+        text-align: center;
+        word-wrap: break-word;
+        max-width: 290px;
     }
     .previewimg {
         width: 280px;
         height: 162px;
     }
-    /* .mini-avatar-settings {
-        display: none;
-    } */
+    .mini-margin {
+        margin-left: 0.3rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -665,8 +688,7 @@ a {
         padding-bottom: 0.5rem;
     }
     .game-padding {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
+        max-width: 370px;
         padding-bottom: 1.5rem;
     }
     .previewimg {

@@ -214,13 +214,13 @@
 
         <!-- Games menu -->
         <div class="container" id="game1">
-            <div class="row">
+            <div class="row d-flex flex-row justify-content-center">
                 <div class="col game-padding">
                     <div class="main-border main-border-shadow d-flex flex-column flex-lg-row">
 
                         <!-- Game preview -->
                         <div class="d-flex flex-row justify-content-lg-start justify-content-center">
-                            <img class="img-fluid previewimg previewimg-margin" id="GamePreviewImg" src="../img/mapp.jpg" alt="preview">
+                            <img class="img-fluid previewimg previewimg-margin align-self-center" id="GamePreviewImg" src="../img/mapp.jpg" alt="preview">
                         </div>
                         
                         <!-- Game information -->
@@ -228,20 +228,20 @@
 
                             <!-- Game title -->
                             <div class="d-flex flex-column flex-lg-row align-items-center">
-                                <div><p class="gametitletext morebold" id="GameTitle">Likanion's Dreams</p></div>
+                                <div><p class="gametitletext morebold gametitle" id="GameTitle">Likanion's Dreams</p></div>
                             </div>
 
                             <!-- Hosted by -->
-                            <div class="d-flex flex-column flex-md-row justify-content-start align-items-lg-center">
+                            <div class="d-flex flex-column flex-lg-row justify-content-start align-items-lg-center mini-margin">
                                 <div><p class="gamehost-players-padding bold">Game Hosted by: </p></div>
                                 <div class="d-flex flex-row">
-                                    <p class="gamehost-players-padding" id="GameHostNameInfo">GGGGGGGGGGGGGGGG</p>
+                                    <p class="gamehost-players-padding" id="GameHostNameInfo">Likanion</p>
                                     <img class="img align-self-center mini-avatar-img mini-avatar-settings" id="GameHostAvatarInfo" src="../img/test2.jpg" alt="avatar">
                                 </div>
                             </div>
 
                             <!-- Players -->
-                            <div class="d-flex flex-column flex-md-row justify-content-start align-items-lg-center">
+                            <div class="d-flex flex-column flex-lg-row justify-content-start align-items-lg-center mini-margin">
                                 <div><p class="gamehost-players-padding bold">Players: </p></div>
                                 <div class="d-flex flex-row">
                                     <img class="img align-self-center mini-avatar-img mini-avatar-settings" id="PlayerAvatarInfo1" src="../img/masasa.jpg" alt="avatar">
@@ -252,6 +252,20 @@
                                     <img class="players-avatar-margin img align-self-center mini-avatar-img mini-avatar-settings" id="PlayerAvatarInfo6" src="../img/masasa.jpg" alt="avatar">
                                     <img class="players-avatar-margin img align-self-center mini-avatar-img mini-avatar-settings" id="PlayerAvatarInfo7" src="../img/masasa.jpg" alt="avatar">
                                     <img class="players-avatar-margin img align-self-center mini-avatar-img mini-avatar-settings" id="PlayerAvatarInfo8" src="../img/masasa.jpg" alt="avatar">
+                                </div>
+                            </div>
+
+                            <!-- Notes -->
+                            <div class="d-flex flex-column flex-lg-row justify-content-start align-items-lg-start mini-margin mb-1">
+                                <div><p class="gamehost-players-padding bold" >Notes: </p></div>
+                                <div class="notes-settings"><p class="notes-settings m-0" id="NotesData">22.05.2020. DON'T FORGET BITCHES</p></div> 
+                            </div> 
+
+                            <!-- Join game -->
+                            <div class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start mt-auto mb-2">
+                                <div class="d-flex flex-lg-row justify-content-center">
+                                    <a type="button" class="buttonjoin bold">Join Game</a>
+                                    <p class="bold m-0 pl-2" id="GameIsRunning">Game is running!</p>
                                 </div>
                             </div>
                         </div>
