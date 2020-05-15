@@ -58,58 +58,6 @@ a:hover {
     padding-right: 0;
 }
 
-
-/* Full Width */
-
-.full-maps-rectif {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.full-maps-rectif .row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.full-bridge-rectifier {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.full-bridge-rectifier .row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.full-bridge-rectifier .container {
-    width: 100%;
-    max-width: 100%!important;
-}
-
-
-/* Fill whole screen */
-
-.fillingscreen {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.fillingscreen>.container {
-    align-self: flex-middle;
-    flex-grow: 1;
-    display: flex;
-}
-
-.fillingscreen>.container>.row {
-    flex-grow: 1;
-    align-self: center;
-    width: 100%;
-}
-
-
 /* Group */
 
 .dividenytwooftwowhat {
@@ -160,10 +108,14 @@ a:hover {
     font-size: 1rem;
 }
 
-.name-text {
-    font-size: 1.4rem;
+.hostnewgame {
+    font-size: 1.6rem;
+    margin: 0;
 }
-/*  */
+.hostnewgameplus {
+    font-size: 2rem;
+    margin: 0;
+}
 
 .invittext {
     font-size: 1.7rem;
@@ -290,14 +242,6 @@ a.buttonjoin {
 /* Likanion's CSS ..................................................................................... */
 
 
-/* Footer Margin */
-
-.footer-p {
-    margin-top: 10px;
-    margin-bottom: 4px
-}
-
-
 /* Dark Side */
 
 .dark-huch {
@@ -372,13 +316,6 @@ a.buttonjoin {
 }
 
 
-/* Margin for mobile */
-
-.margmobile {
-    margin-right: auto !important;
-}
-
-
 /* Sticky Things */
 
 .header-st.sticky {
@@ -389,21 +326,11 @@ a.buttonjoin {
     transition: all .2s ease-out;
 }
 
-.sidebarmaps.sticky {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
-
 
 /* Navigation Bar Mobile Toggle */
 
 .navbar-light .menu-icon-circles .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgba(0, 0, 0, 0.5)' d='M15.5,12A3.5,3.5,0,1,1,12,15.5,3.5,3.5,0,0,1,15.5,12Zm11,0A3.5,3.5,0,1,1,23,15.5,3.5,3.5,0,0,1,26.5,12Zm-22,0A3.5,3.5,0,1,1,1,15.5,3.5,3.5,0,0,1,4.5,12Z'/%3E%3C/svg%3E");
-}
-
-.navbar-dark .menu-icon-circles .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgba(255, 255, 255, 0.5)' d='M15.5,12A3.5,3.5,0,1,1,12,15.5,3.5,3.5,0,0,1,15.5,12Zm11,0A3.5,3.5,0,1,1,23,15.5,3.5,3.5,0,0,1,26.5,12Zm-22,0A3.5,3.5,0,1,1,1,15.5,3.5,3.5,0,0,1,4.5,12Z'/%3E%3C/svg%3E");
 }
 
 
@@ -434,21 +361,6 @@ a.buttonjoin {
 }
 
 
-/* BTCO Menu */
-
-.btco-menu li>a {
-    padding: 10px 15px;
-    color: #000;
-}
-
-.btco-menu .active a:focus,
-.btco-menu li a:focus,
-.navbar>.show>a:focus {
-    background: transparent;
-    outline: 0;
-}
-
-
 /* Dropdown mobile menu */
 
 .dropdown-menu .show>.dropdown-toggle::after {
@@ -460,19 +372,6 @@ a.buttonjoin {
 
 .nomarginatallwhyidk {
     margin: 0;
-}
-
-
-/* Main Margins */
-
-.main-sm {
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-.main-md {
-    margin-top: 10px;
-    margin-bottom: 20px;
 }
 
 
@@ -572,22 +471,6 @@ a {
 }
 
 
-/* Images Width */
-
-.img-style {
-    height: 79px;
-    width: 471px;
-}
-
-
-/* Zero Bottom Pad/M */
-
-.youliedtome {
-    padding-bottom: 0px;
-    margin-bottom: 0%;
-}
-
-
 /* Asmodeus main color */
 
 .bgc-pastel-red {
@@ -607,24 +490,6 @@ a {
 
 .lttstorebut-black:hover {
     color: #000000!important;
-}
-
-
-/* Asmodeus mainpage background picture */
-
-.bg-asmodey-prototype-bg-intro {
-    background-image: url("img/asmodey_prototype-bg-intro.png");
-}
-
-
-/* List Paddings */
-
-.list-meidum li {
-    padding-bottom: 10px;
-}
-
-.list-meidum li:last-child {
-    padding-bottom: 0;
 }
 
 
@@ -671,10 +536,6 @@ a {
     .page-container {
         overflow-x: hidden;
         position: relative;
-    }
-    .partofdividing2 .container {
-        padding-left: 0;
-        padding-right: 0;
     }
     form {
         padding: 5px;

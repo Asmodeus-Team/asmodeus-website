@@ -265,53 +265,125 @@
                             <div class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start mt-auto mb-2">
                                 <div class="d-flex flex-lg-row justify-content-center">
                                     <a type="button" class="buttonjoin bold">Join Game</a>
+                                    <p class="bold m-0 pl-2" id="GameIsRunning"></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Games menu -->
+        <div class="container" id="game2">
+            <div class="row d-flex flex-row justify-content-center">
+                <div class="col game-padding">
+                    <div class="main-border main-border-shadow d-flex flex-column flex-lg-row">
+        
+                        <!-- Game preview -->
+                        <div class="d-flex flex-row justify-content-lg-start justify-content-center">
+                            <img class="img-fluid previewimg previewimg-margin align-self-center" id="GamePreviewImg"
+                                src="../img/mapp.jpg" alt="preview">
+                        </div>
+        
+                        <!-- Game information -->
+                        <div class="d-flex flex-column">
+        
+                            <!-- Game title -->
+                            <div class="d-flex flex-column flex-lg-row align-items-center">
+                                <div>
+                                    <p class="gametitletext morebold gametitle" id="GameTitle">Likanion's Dreams</p>
+                                </div>
+                            </div>
+        
+                            <!-- Hosted by -->
+                            <div class="d-flex flex-column flex-lg-row justify-content-start align-items-lg-center mini-margin">
+                                <div>
+                                    <p class="gamehost-players-padding bold">Game Hosted by: </p>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <p class="gamehost-players-padding" id="GameHostNameInfo">Likanion</p>
+                                    <img class="img align-self-center mini-avatar-img mini-avatar-settings"
+                                        id="GameHostAvatarInfo" src="../img/test2.jpg" alt="avatar">
+                                </div>
+                            </div>
+        
+                            <!-- Players -->
+                            <div class="d-flex flex-column flex-lg-row justify-content-start align-items-lg-center mini-margin">
+                                <div>
+                                    <p class="gamehost-players-padding bold">Players: </p>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <img class="img align-self-center mini-avatar-img mini-avatar-settings"
+                                        id="PlayerAvatarInfo1" src="../img/masasa.jpg" alt="avatar">
+                                    <img class="players-avatar-margin img align-self-center mini-avatar-img mini-avatar-settings"
+                                        id="PlayerAvatarInfo2" src="../img/masasa.jpg" alt="avatar">
+                                    <img class="players-avatar-margin img align-self-center mini-avatar-img mini-avatar-settings"
+                                        id="PlayerAvatarInfo3" src="../img/masasa.jpg" alt="avatar">
+                                    <img class="players-avatar-margin img align-self-center mini-avatar-img mini-avatar-settings"
+                                        id="PlayerAvatarInfo4" src="../img/masasa.jpg" alt="avatar">
+                                    <img class="players-avatar-margin img align-self-center mini-avatar-img mini-avatar-settings"
+                                        id="PlayerAvatarInfo5" src="../img/masasa.jpg" alt="avatar">
+                                    <img class="players-avatar-margin img align-self-center mini-avatar-img mini-avatar-settings"
+                                        id="PlayerAvatarInfo6" src="../img/masasa.jpg" alt="avatar">
+                                    <img class="players-avatar-margin img align-self-center mini-avatar-img mini-avatar-settings"
+                                        id="PlayerAvatarInfo7" src="../img/masasa.jpg" alt="avatar">
+                                    <img class="players-avatar-margin img align-self-center mini-avatar-img mini-avatar-settings"
+                                        id="PlayerAvatarInfo8" src="../img/masasa.jpg" alt="avatar">
+                                </div>
+                            </div>
+        
+                            <!-- Notes -->
+                            <div
+                                class="d-flex flex-column flex-lg-row justify-content-start align-items-lg-start mini-margin mb-1">
+                                <div>
+                                    <p class="gamehost-players-padding bold">Notes: </p>
+                                </div>
+                                <div class="notes-settings">
+                                    <p class="notes-settings m-0" id="NotesData">22.05.2020. DON'T FORGET BITCHES</p>
+                                </div>
+                            </div>
+        
+                            <!-- Join game -->
+                            <div class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start mt-auto mb-2">
+                                <div class="d-flex flex-lg-row justify-content-center">
+                                    <a type="button" class="buttonjoin bold">Join Game</a>
                                     <p class="bold m-0 pl-2" id="GameIsRunning">Game is running!</p>
                                 </div>
                             </div>
+        
                         </div>
-
-
-
-                        
-                        <!-- <div class="row">
-                            <div class="col-5 pr-0">
-                                <img class="previewimg previewimg-margin" src="../img/mapp.jpg" alt="preview">
-                            </div>
-                            <div class="col-7 pl-0">
-                                <div class="row">
-                                    <div class="col gametitle"><p class="gametitletext morebold" id="GameTitle">Forfeit's Secrets</p></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col gamehost gamehosttext">
-                                        <span><p class="gamehost-players-padding">Game Hosted by: </p></span>
-                                        <span id="GameHostNameInfo"><p class="gamehost-players-padding">GGGGGGGGGGGGGGGG</p></span>
-                                        <span id="GameHostAvatarInfo"><img class="img-fluid mini-avatar-img mini-avatar-settings" src="../img/test2.jpg" alt="avatar"></span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col players gamehosttext">
-                                        <span><p class="gamehost-players-padding">Players:</p></span>
-                                        <span id="Player1AvatarInfo"><img class="img-fluid mini-avatar-img mini-avatar-settings" src="../img/test2.jpg"
-                                                alt="avatar"></span>
-                                        <span id="Player2AvatarInfo"><img class="img-fluid mini-avatar-img mini-avatar-settings" src="../img/test2.jpg"
-                                                alt="avatar"></span>
-                                        <span id="Player3AvatarInfo"><img class="img-fluid mini-avatar-img mini-avatar-settings" src="../img/test2.jpg"
-                                                alt="avatar"></span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col gamenotes">Notes:</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col joingame">Join game!</div>
-                                </div>
-                            </div>
-                        </div> -->
+                        <!-- Game information -->
+        
                     </div>
                 </div>
             </div>
         </div>
         <!-- Games menu -->
+
+        <!-- Host new Game -->
+        <div class="container" id="hostnewgame">
+            <div class="row d-flex flex-row justify-content-center">
+                <div class="col game-padding">
+                    <a href="#" class="lttstorebut-black"><div class="main-border main-border-shadow d-flex flex-lg-row justify-content-center">
+
+                        <!-- Plus -->
+                        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+                            <i class="fa fa-plus fa-2x mr-2" aria-hidden="true"></i>
+                        </div>
+
+                        <!-- Host new game -->
+                        <div class="d-flex flex-column flex-lg-row justify-content-center"></div>
+                            <p class="hostnewgame morebold">Host new Game</p>
+
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Host new Game -->
 
     </div>
 
