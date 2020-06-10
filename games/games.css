@@ -1,0 +1,574 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Disable horizontal scroll bar in browser  */
+
+.page-container {
+    overflow-x: hidden;
+}
+
+
+/* Prevent blue glow in browsers */
+
+a,
+button {
+    transition: background .3s ease-in-out;
+    outline: none!important;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* User's photo dimensions */
+
+.img-userprofilepic {
+    height: 40px;
+    width: 40px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .4);
+}
+
+
+/* The Main Thing */
+
+.main {
+    width: 100%;
+    clear: both;
+    background: 50% 50% no-repeat;
+    padding: 0 50px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+.main .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Group */
+
+.dividenytwooftwowhat {
+    display: flex;
+}
+
+
+/* Text Sizes */
+
+.username-name {
+    font-size: 16px;
+}
+
+.link-style {
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.h4-modal {
+    font-size: 26px;
+}
+
+
+/* Likanion's CSS ..................................................................................... */
+
+
+/* main navbar padding */
+
+.navbar-asmo {
+    padding-bottom: 0rem;
+}
+
+
+/* Text settings */
+
+.bold {
+    font-weight: 600;
+}
+.morebold {
+    font-weight: 600;
+}
+
+.bigtext {
+    font-size: 1.3rem;
+}
+
+.normaltext {
+    font-size: 1rem;
+}
+
+.hostnewgame {
+    font-size: 1.6rem;
+    margin: 0;
+}
+.hostnewgameplus {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.invittext {
+    font-size: 1.7rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+}
+.gametitletext {
+    font-size: 1.6rem;
+    padding-top: 0.5rem;
+    margin: 0;
+}
+
+/* Games menu's padding */
+
+.game-padding {
+    max-width: 850px;
+    padding-bottom: 1.5rem;
+}
+.gametitle {
+    word-wrap: break-word;
+    max-width: 450px;
+}
+.gamehost {
+    display: flex;
+    position: absolute;
+    margin: 0;
+    top: 2.3rem;
+}
+.players {
+    display: flex;
+    position: absolute;
+    margin: 0;
+    top: 3.8rem;
+}
+.gamehost-players-padding {
+    margin: 0;
+    padding-right: 0.5rem;
+}
+.notes-settings {
+    word-wrap: break-word;
+    max-width: 390px;
+    font-size: 0.9rem;
+}
+
+/* Big img settings */
+
+.previewimg {
+    width: 340px;
+    height: 192px;
+}
+
+.avatar-position {
+    display: flex;
+    -ms-flex-align: right;
+    align-items: right;
+    justify-content: right;
+    float: right;
+}
+
+.previewimg-margin {
+    margin: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Little img settings */
+
+.mini-avatar-img {
+    height: 20px;
+    width: 20px;
+}
+.mini-avatar-settings {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 3px;
+}
+.players-avatar-margin {
+    margin-left: 0.5rem;
+}
+
+
+/* Games border settings */
+
+.main-border {
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 3px;
+}
+
+.main-border-shadow {
+    box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.34);
+}
+
+/* Content Center */
+
+.contentcenter {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Button Join Game */
+a.buttonjoin {
+  display: flex;
+  font-size: 0.8rem;
+  text-align: center;
+  user-select: none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.2rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+  transition: all .218s ease 0s;
+}
+/* Likanion's CSS ..................................................................................... */
+
+
+/* Dark Side */
+
+.dark-huch {
+    color: rgba(255, 255, 255, .7);
+}
+
+.dark-huch button:hover {
+    color: rgba(255, 255, 255, .9);
+}
+
+.dark-huch .partofdividing2,
+.dark-huch .navbar a,
+.dark-huch h1 a,
+.dark-huch h2 a,
+.dark-huch h3 a,
+.dark-huch h4 a,
+.dark-huch h5 a,
+.dark-huch h6 a,
+.dark-huch p a {
+    color: rgba(255, 255, 255, .6);
+}
+
+.dark-huch .buttonnav:hover,
+.dark-huch .navbar a:hover,
+.dark-huch h1 a:hover,
+.dark-huch h2 a:hover,
+.dark-huch h3 a:hover,
+.dark-huch h4 a:hover,
+.dark-huch h5 a:hover,
+.dark-huch h6 a:hover,
+.dark-huch p a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.dark-huch .button-cleanandno,
+.dark-huch .button-cleanandno:hover {
+    color: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 1);
+}
+
+
+/* Light Side */
+
+.light-huch .partofdividing2,
+.light-huch .navbar a,
+.light-huch h1 a,
+.light-huch h2 a,
+.light-huch h3 a,
+.light-huch h4 a,
+.light-huch h5 a,
+.light-huch h6 a,
+.light-huch p a {
+    color: rgba(0, 0, 0, .6);
+}
+
+.light-huch .partofdividing2:hover,
+.light-huch .navbar a:hover,
+.light-huch h1 a:hover,
+.light-huch h2 a:hover,
+.light-huch h3 a:hover,
+.light-huch h4 a:hover,
+.light-huch h5 a:hover,
+.light-huch h6 a:hover,
+.light-huch p a:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.light-huch .button-cleanandno,
+.light-huch .button-cleanandno:hover {
+    color: rgba(0, 0, 0, .7);
+    border-color: rgba(0, 0, 0, .3);
+}
+
+
+/* Sticky Things */
+
+.header-st.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    transition: all .2s ease-out;
+}
+
+
+/* Navigation Bar Mobile Toggle */
+
+.navbar-light .menu-icon-circles .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgba(0, 0, 0, 0.5)' d='M15.5,12A3.5,3.5,0,1,1,12,15.5,3.5,3.5,0,0,1,15.5,12Zm11,0A3.5,3.5,0,1,1,23,15.5,3.5,3.5,0,0,1,26.5,12Zm-22,0A3.5,3.5,0,1,1,1,15.5,3.5,3.5,0,0,1,4.5,12Z'/%3E%3C/svg%3E");
+}
+
+
+/* NavBar */
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(64, 64, 64);
+}
+
+.profileinfo {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    display: flex;
+}
+
+.profile-main-info {
+    display: inline-block;
+    align-items: left;
+    justify-content: left;
+    margin: 0;
+    display: flex;
+}
+
+.usernamepadding {
+    padding-left: 5px;
+}
+
+
+/* Dropdown mobile menu */
+
+.dropdown-menu .show>.dropdown-toggle::after {
+    transform: rotate(-90deg);
+}
+
+
+/* Zero Margin */
+
+.nomarginatallwhyidk {
+    margin: 0;
+}
+
+
+/* Buttons */
+
+.btn-d,
+.btn-d:hover,
+.btn-d:focus {
+    color: #FFF;
+    background: rgba(0, 0, 0, .3);
+}
+
+button {
+    outline: none!important;
+}
+
+.mobile-button {
+    color: #000000!important;
+    border-color: #cccccc!important;
+}
+
+.link-register-style {
+    width: 100%;
+}
+
+.btn-isbtswhat-no,
+.btn-isbtswhat-no:hover,
+.btn-isbtswhat-no:active,
+.btn-isbtswhat-no:focus {
+    background: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.button-cleanandno {
+    background: transparent!important;
+    border: 2px solid transparent;
+}
+
+.button-cleanandno:hover {
+    background: transparent!important;
+    border: 2px solid transparent;
+}
+
+.btn-preview {
+    width: 30%;
+}
+
+
+/* Forms */
+
+.form-control {
+    border-color: rgba(0, 0, 0, .1);
+    box-shadow: none;
+}
+
+
+/* Text font */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button,
+ul,
+label,
+.btn,
+a {
+    font-family: "Montserrat";
+}
+
+
+/* Black text */
+
+.blacklegocity {
+    font-family: "Montserrat";
+    color: #000000!important;
+}
+
+
+/* Container maximum width */
+
+.container {
+    max-width: 1140px;
+}
+
+
+/* Asmodeus logo */
+
+.asmologo img {
+    width: 32px;
+    height: 48px;
+}
+
+
+/* Asmodeus main color */
+
+.bgc-pastel-red {
+    background-color: #F0645E;
+}
+
+
+/* Black Colors */
+
+.store-black {
+    color: #000000!important;
+}
+
+.lttstorebut-black {
+    color: #000000!important;
+}
+
+.lttstorebut-black:hover {
+    color: #000000!important;
+}
+
+
+/* Mobile adjustments */
+
+@media (max-width: 1200px) {
+    .main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+    .main {
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
+    }
+    .proforient {
+        display: flex;
+        align-items: left;
+    }
+    .game-padding {
+        max-width: 370px;
+        padding-bottom: 1.5rem;
+    }
+    .gametitle {
+        text-align: center;
+        word-wrap: break-word;
+        max-width: 290px;
+    }
+    .previewimg {
+        width: 280px;
+        height: 162px;
+    }
+    .mini-margin {
+        margin-left: 0.3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-container {
+        overflow-x: hidden;
+        position: relative;
+    }
+    form {
+        padding: 5px;
+    }
+    .dividenytwooftwowhat,
+    .dividenytwooftwowhat .main {
+        display: block;
+        width: 100%;
+    }
+    .navbar-asmo {
+        padding-bottom: 0.5rem;
+    }
+    .game-padding {
+        max-width: 370px;
+        padding-bottom: 1.5rem;
+    }
+    .previewimg {
+        width: 288px;
+        height: 162px;
+    }
+    
+}
+
+@media (max-width: 576px) {
+
+}
+
+/* Hide if logged in */
+
+.if-logged-in {
+    display: none;
+}
+
+.lhide {
+    display: none;
+}
